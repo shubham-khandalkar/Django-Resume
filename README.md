@@ -1,2 +1,2 @@
 # Django-Resume
-Full DJango version of the resume
+Full Django version of the resume
