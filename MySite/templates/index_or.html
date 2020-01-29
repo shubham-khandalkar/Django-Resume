@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/header-animation.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script src="js/inviewport.js"></script>
+</head>
+<body>
+  <div class="overflow-wrap">
+	<div class="modal-wrap" >
+		<div class="mask"></div>
+		<div class="modal" id="modal" style="max-width: 700px;">
+          <div class="carousel-wrap" style="width: 700px;">
+            <div class="window">
+              <div id="carousel" style="left: -700px; transform: translateX(0px);" class="">
+                <div class="slide" style="width: 700px; background: url('media/images/admission.png') center center / cover;"></div>
+				<div class="slide" style="width: 700px; background: url('media/images/fees.png') center center / cover;"></div>
+				<div class="slide" style="width: 700px; background: url('media/images/reports.png') center center / cover;"></div>
+              </div>
+              <i class="mdi mdi-chevron-left" id="prev"><img src='media/icons/left.png'></i>
+              <i class="mdi mdi-chevron-right" id="next"><img src='media/icons/right.png'></i>
+            </div>
+          </div>
+          <div class="info-box">
+            <div id="project-title" class="title"></div>
+            <div id="project-tag" class="modal-tag"></div>
+            <div id="project-detail" class="detail"></div>
+            <a id="project-link" href="" target="_blank"><div class="button visible">
+                <i class="mdi mdi-open-in-new"></i>VIEW SITE
+              </div></a>
+			<i class="close mdi mdi-close"><img src='media/icons/clear.png'></i>
+          </div>
+          
+        </div>
+	</div>
+	<div id="greeting">
+		<div class="all-center">
+			<div class="text">Hello, I'm <span class="highlight">Shubham Khandalkar</span>.<br>I'm a full-stack web developer.
+			</div>
+			<div class="button page-link" dest="about">View my work <i class="mdi mdi-arrow-right"></i></div>
+		</div>
+	</div>
+	<section id="home">
+		<div id="canvas-div" class="canvas-div">
+			<canvas id="canvas" style=""></canvas>
+		</div>
+		
+	</section>
+    <div class="main-content">
+      <div id="nav-bar" class="nav-bar">
+        <div id="nav-toggle">
+          <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-caption">Menu</div>
+        </div>
+        <div id="nav">
+          <ul>
+            <li>
+              <div class="page-link" dest="home">HOME</div>
+            </li>
+            <li >
+              <div class="page-link present" dest="about">ABOUT</div>
+            </li>
+            <li>
+              <div  class="page-link" dest="projects">PROJECTS</div>
+            </li>
+            <li>
+              <div  class="page-link" dest="contact">CONTACT</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="content-div" class="content-div">
+        <section id="about" class="about-div">
+            <div class="header trigger-animated animate-right" style="animation-delay: 0.5s;">ABOUT</div>
+            <div class="header-bar-parent">
+                <div class="header-bar trigger-animated animate-left" style="animation-delay: 0.7s;"></div>
+            </div>
+			<div class="about-div-content" >
+				<div class="about-me">
+					<div class="my-pic"> 
+						<img src="media\images\me.png" width="400" height="340">
+					</div>
+					<div class="this-guy"><strong>Who's this Guy?</strong></div>
+					<div style="margin-top:10px;">
+						I am a Full Stack Web Developer with experience of 3 Years.<br> I have been enjoying coding for the last 10 Years.!!
+						<br>I have passion for solving real world problems.
+					</div>
+				</div>
+				<div class="skills">
+				  <div class="bar empty">
+					<div class="bar fill .trigger-animated" style="width:80%;">
+					  <div class="tag">Python</div>
+					</div>
+					<div class="skill-percent">80%</div>
+				  </div>
+				  <div class="bar empty">
+					<div class="bar fill" style="width:70%;class="bar empty">
+					  <div class="tag">Django</div>
+					</div>
+					<div class="skill-percent">70%</div>
+				  </div>
+				  <div class="bar empty">
+					<div class="bar fill" style="width:65%;class="bar empty">
+					  <div class="tag">HTML5</div>
+					</div>
+					<div class="skill-percent">65%</div>
+				  </div>
+				  <div class="bar empty">
+					<div class="bar fill" style="width:80%;class="bar empty">
+					  <div class="tag">Javascript</div>
+					</div>
+					<div class="skill-percent">80%</div>
+				  </div>
+				  <div class="bar empty">
+					<div class="bar fill" style="width:65%;class="bar empty">
+					  <div class="tag">CSS</div>
+					</div>
+					<div class="skill-percent">65%</div>
+				  </div>
+				  <div class="bar empty">
+					<div class="bar fill" style="width:70%;class="bar empty">
+					  <div class="tag">SQL</div>
+					</div>
+					<div class="skill-percent">70%</div>
+				  </div>
+				</div>
+			</div>
+        </section>
+        <section id="projects" class="project-div">
+			<div class="header trigger-animated animate-right" style="animation-delay: 0.5s;">PROJECTS</div>
+			<div class="header-bar-parent">
+				<div class="header-bar trigger-animated animate-right" style="animation-delay: 0.7s;"></div>
+			</div>
+			<div class="project-div-content">
+				<div class="card-handler">
+					<div class="card" >
+						<img src="media\images\admission.png" style="position:absolute;">
+						<div class="project-card-mask card-hover">
+							<div class="card-hover card-project">
+								<div class="card-hover card-project-name">JEMS Fees Managment System</div>
+								<div style="height:10px;"></div>
+								<span class="card-hover card-project-tech">C# .NET</span>
+							</div>
+							<div id="jems" class="card-hover card-project-button button" id="ordering">LEARN MORE</div>
+						</div>
+					</div>
+					<div class="card" >
+						<img src="media\images\ggitstouch1.jpg" style="position:absolute;">
+						<div class="project-card-mask card-hover">
+							<div class="card-hover card-project">
+								<div class="card-hover card-project-name">GGITS Touch</div>
+								<div style="height:10px;"></div>
+								<span class="card-hover card-project-tech">Android</span>
+							</div>
+							<div id="ggitstouch" class="card-hover card-project-button button" id="ordering">LEARN MORE</div>
+						</div>
+					</div>
+					<div class="card" >
+						<img src="media\images\resume1.png" style="position:absolute;">
+						<div class="project-card-mask card-hover">
+							<div class="card-hover card-project">
+								<div class="card-hover card-project-name">Website Resume</div>
+								<div style="height:10px;"></div>
+								<span class="card-hover card-project-tech">Django/HTML5/JS/CSS</span>
+							</div>
+							<div id="websiteresume" class="card-hover card-project-button button" id="ordering">LEARN MORE</div>
+						</div>
+					</div>
+				</div>
+				<div style="text-align:center; margin-top: 50px;">
+					<div style="font-weight: bold; font-size: 30px;">Wanna see more?</div>
+					<div style="font-size: 20px;">
+						<div>Check out my code repositories below</div>
+						<div>I would love to collaborate with someone who shares the same enthusiasm for coding.</div>
+						<div style="margin-top: 20px;"><a class="github-button" href="https://github.com/shubham-khandalkar/" target="_blank">
+							<div class="github-button button visible">Github</div>
+						</a></div>
+						<div>
+						<a class="codepen-button" href="https://codepen.io/shubhamkhandalkar" target="_blank">
+							<div class="codepen-button button visible">Codepen</div>
+						</a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section>
+		<section id="contact" class="contact-div">
+			<svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+			  <path d="M0 0 L50 100 L100 0 Z" fill="#eee" stroke="#eee"></path>
+			</svg>
+			<div class="header trigger-animated animate-right" style="animation-delay: 0.5s; color: white;">CONTACT</div>
+			<div class="header-bar-parent">
+				<div class="contact-header-bar header-bar trigger-animated animate-right" style="animation-delay: 0.7s;"></div>
+			</div>
+			<div class="contact-div-content">
+				<div style="text-align: center;">
+					<div style="color:#04c2c9; margin: 50px auto 10px auto; font-weight: bold;">Have a question or want to work together?</div>
+					<div style="color:#eee; margin: 10px auto 50px auto;">Email me at <span class="copier">shubham.sk473@gmail.com</span>. You can also contact me at <span class="copier">8349066713</span></div>
+					<div>
+						<form id="contact-form">
+							<input id="message-name" class="message-input" type='text' name='name' placeholder='Name' required>
+							<input id="message-email" class="message-input" type='text' name='email' placeholder='Enter email' required>
+							<input id="message-body" class="message-input message-box" type='textarea' name='message' placeholder='Your Message' required>
+							<div id="success">
+							  <div>
+								Your message was sent successfully. Thanks!
+							  </div>
+							</div>
+							<input type="submit" class="button" id="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+			</div>			
+        </section>
+		<footer>
+			<div style="text-align: center;">
+				<div id="footer-home" class="page-link" dest="home" style=""><img src="media/icons/dup.png"></div>
+			</div>
+			<div style="padding: 60px 0px; text-align:center;">
+			  <a target="_blank" href="https://www.linkedin.com/in/shubham-khandalkar-5ba942a0/"><img style="width:50px; height: 50px; margin:5px;" src="media/icons/linkedin.png"></a>
+			  <a target="_blank" href="https://github.com/shubham-khandalkar/"><img style="width:50px; height: 50px; margin:5px;" src="media/icons/git.png"></a>
+			  <a target="_blank" href="https://codepen.io/shubhamkhandalkar"><img style="width:50px; height: 50px; margin:5px;" src="media/icons/codepen.png"></a>
+			  <a target="_blank" href="https://www.instagram.com/shubham2694/"><img style="width:50px; height: 50px; margin:5px;" src="media/icons/insta.png"></a>
+			  <a target="_blank" href="https://www.facebook.com/shubham.khandalkar"><img style="width:50px; height: 50px; margin:5px;" src="media/icons/facebook.png"></a>
+			</div>
+		</footer>
+	  </div>      
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/css-animation.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/scroll-position.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+.header{
+  font-family: 'Raleway-Body', sans-serif;
+  font-weight: bold;
+  font-size: 30pt;
+  color: #444649;
+  position: relative;
+  display:block;
+  text-align:center!important;
+}
+
+.header-bar-parent{
+  text-align:center!important;
+}
+
+.animate-right.triggeredCSS3{
+  animation: animateright 0.3s;
+  animation-delay: 0.5s;
+}
+
+.animate-left.triggeredCSS3 {
+  animation: animateleft 0.4s;
+  
+}
+
+.trigger-animated{
+  visibility:hidden;
+}
+
+.bar.fill.triggeredCSS3 {
+    
+}
+
+
+.header-bar {  
+  width: 70px;
+  height: 4px;
+  background: #444649;  
+  position: relative;  
+  display: inline-block;
+}
+
+
+@keyframes animateright{from{right:-300px;opacity:0;visibility:hidden} to{right:0;opacity:1;visibility:visible}}
+@keyframes animateleft{from{left:-300px;opacity:0;visibility:hidden} to{left:0;opacity:1;visibility:visible}}
